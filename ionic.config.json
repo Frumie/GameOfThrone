@@ -1,0 +1,7 @@
+{
+  "name": "gameApp",
+  "integrations": {
+    "cordova": {}
+  },
+  "type": "angular"
+}

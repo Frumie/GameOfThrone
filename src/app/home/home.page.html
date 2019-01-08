@@ -1,0 +1,41 @@
+<ion-header *ngIf="character">
+    <ion-toolbar style="border-bottom: none">
+        <ion-title>{{character.name}}</ion-title>
+    </ion-toolbar>
+</ion-header>
+
+<ion-content *ngIf="character">
+    <ion-list no-padding>
+        <ion-item-divider no-padding class="char-divider-about">
+            <p>ABOUT THE CHARACTER</p>
+        </ion-item-divider>
+
+        <ion-list no-padding lines="none" class="test">
+            <div>
+                <p class="char-label">Title</p>
+                <p class="char-txt">{{character.title}}</p>
+                <p class="char-label-1">Status</p>
+                <p class="char-txt-1">{{character.status}}</p>
+            </div>
+        </ion-list>
+
+        <ion-item-divider no-padding class="char-divider-sibling">
+            <p>SIBLINGS</p>
+        </ion-item-divider>
+        <ion-item no-padding class="test-sibling" *ngFor="let sibling of character.siblings; let  i = index; let last = last"
+                  [ngClass]="{ last: last }">
+            <div>
+                <p class="char-label">Name</p>
+                <p class="char-txt">{{sibling.name}}</p>
+                <p class="char-label">Date of birth</p>
+                <p class="char-txt">{{sibling.dateOfBirth}}</p>
+            </div>
+        </ion-item>
+    </ion-list>
+</ion-content>
+
+<ion-footer>
+    <ion-toolbar>
+        <ion-title></ion-title>
+    </ion-toolbar>
+</ion-footer>

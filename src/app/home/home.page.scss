@@ -1,0 +1,104 @@
+
+$background-color: #FAFAFA;
+$border-color: #CDCDCD;
+$label-color: #B8BDB9;
+
+
+ion-footer{
+  min-height: 60px !important;
+  background-color: $background-color !important;
+
+  ion-title{
+    text-align: center;
+    background-color: $background-color !important;
+    border-top: solid 1px $border-color !important;
+  }
+}
+
+ion-toolbar {
+  ion-title {
+    text-align: center;
+  }
+}
+
+ion-label {
+  margin-left:0;
+}
+.char-name {
+  font-weight: bold;
+}
+
+.header-md:after {
+  height: 0 !important;
+}
+
+.char-divider-about  {
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+
+  p {
+    font-size: 16px;
+    margin-left: 20pt;
+    margin-top: 35pt;
+    margin-bottom: 10pt;
+  }
+}
+
+.char-divider-sibling  {
+  background-color: $background-color;
+  border-bottom: 1px solid $border-color;
+  border-top: 1px solid $border-color;
+
+  p {
+    font-size: 16px;
+    margin-left: 20pt;
+    margin-top: 35pt;
+    margin-bottom: 10pt;
+  }
+}
+
+.list-ios {
+  margin: 0;
+  background: var(--ion-item-background,var(--ion-background-color,#fff));
+}
+
+.char-label {
+  font-size: 12pt;
+  color: $label-color;
+  margin-top: 15pt;
+  margin-bottom: 0;
+}
+.char-label-1 {
+  font-size: 15pt;
+  color: $label-color;
+  margin-top: 10pt;
+  margin-bottom: 0;
+}
+
+.char-txt {
+  font-size: 15pt;
+  margin-top: 5pt;
+  margin-bottom: 15pt;
+}
+
+.char-txt-1 {
+  font-size: 15pt;
+  margin-top: 5pt;
+  margin-bottom: 15pt;
+}
+
+.test {
+  margin-left: 20pt !important;
+  margin-bottom: 0 !important;
+}
+
+.test-sibling {
+  margin-left: 20pt !important;
+  margin-bottom: 0 !important;
+
+}
+
+.game-footer p {
+  background-color: $background-color;
+}
+
